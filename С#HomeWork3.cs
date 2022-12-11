@@ -1,10 +1,23 @@
-﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-itn ArrayEntry(int number)
+﻿// Напишите программу, которая принимает на вход число и проверяет, является ли оно палиндромом.
+int NumberLenght(int number)
 {
-    
+int count = 0;
+
+    while (number > 0)
+    {
+        number = number / 10;
+        count++;
+    }
+    return count;
 }
 
+int[] ArrayFilling(int[] Array, int size)
+{
 
+}
+
+int Num = Convert.ToInt32(Console.ReadLine());
+int lenght = NumberLenght(Num);
 
 
 
