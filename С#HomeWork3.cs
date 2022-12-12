@@ -1,4 +1,4 @@
-﻿// Напишите программу, которая принимает на вход число и проверяет, является ли оно палиндромом.
+﻿/*// Напишите программу, которая принимает на вход число и проверяет, является ли оно палиндромом.
 int NumberLength(int number)
 {
     int count = 0;
@@ -59,6 +59,7 @@ else
     array = ArrayFilling(array, length, num);
     Console.WriteLine(PalindromeCheck(array, length));
 }
+*/
 
 
 
@@ -82,4 +83,40 @@ else
 // double zB = Convert.ToDouble(Console.ReadLine());
 
 // Distance(xA, yA, zA, xB, yB, zB);
+*/
+
+
+
+/*// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+
+int[] Cubes(int number)
+{
+    int[] cubesArray = new int[number];
+    int index = 0;
+    int current = 1;
+    
+    while (index < number)
+    {
+        cubesArray[index] = (int)Math.Pow(current, 3);
+        index++;
+        current++;
+    }
+    return cubesArray;
+}
+
+void ReturnCubes(int[] array)
+{
+    int index = 0;
+    while(index < array.Length - 1)
+    {
+        Console.Write($"{array[index]}, ");
+        index++;
+    }
+    Console.Write($"{array[index]}.");
+}
+
+Console.WriteLine("Input a number ");
+int num = Convert.ToInt32(Console.ReadLine());
+int [] array = Cubes(num);
+ReturnCubes(array);
 */
