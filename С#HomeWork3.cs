@@ -23,19 +23,41 @@ int[] ArrayFilling(int[] array, int size, int number)
     return array;
 }
 
-int []Arr
+bool PalindromeCheck(int[] array,int size)
+{
+    int left = 0;
+    int right = size - 1;
+    while (left < right)
+    {
+        if(array[left] == array[right])
+        {
+            left++;
+            right--;
+        }
+        else
+        {
+            break;
+            
+        }
+    }
+    return(left >= right);
+    
+    
+}
+
 Console.WriteLine("Input a number ");
 int num = Convert.ToInt32(Console.ReadLine());
 int length = NumberLength(num);
 if (length == 1)
 {
-    Console.WriteLine("True");
+    Console.WriteLine("true");
 }
 
 else
 {
-int[] array = new int[length];
-array = ArrayFilling(array, length, num);
+    int[] array = new int[length];
+    array = ArrayFilling(array, length, num);
+    Console.WriteLine(PalindromeCheck(array, length));
 }
 
 
